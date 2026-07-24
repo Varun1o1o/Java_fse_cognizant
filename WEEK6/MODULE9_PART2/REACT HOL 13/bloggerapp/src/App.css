@@ -1,0 +1,267 @@
+/* ─── Global Reset & Fonts ──────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  min-height: 100vh;
+}
+
+/* ─── App Shell ─────────────────────────────────────────────────────────── */
+.app-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.app-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+/* ─── Technique Legend ───────────────────────────────────────────────────── */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.legend-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.legend-item span {
+  color: #2e7d32;
+  margin-right: 4px;
+}
+
+/* ─── Three-column grid (matching the screenshot) ───────────────────────── */
+.columns-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+/* ── Column: Course Details (left, className="mystyle1") ─────────────────── */
+.mystyle1 {
+  padding: 32px 28px;
+  border-right: 3px solid #4caf50;
+}
+
+/* ── Column: Book Details (centre, className="st2") ─────────────────────── */
+.st2 {
+  padding: 32px 28px;
+  border-right: 3px solid #4caf50;
+}
+
+/* ── Column: Blog Details (right, className="v1") ───────────────────────── */
+.v1 {
+  padding: 32px 28px;
+}
+
+/* ─── Section headings ──────────────────────────────────────────────────── */
+.mystyle1 h1,
+.st2 h1,
+.v1 h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+/* ─── Book Details Styles ───────────────────────────────────────────────── */
+.st2 ul {
+  list-style: none;
+}
+
+.st2 ul div {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.st2 ul div:last-child {
+  border-bottom: none;
+}
+
+.st2 ul div h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.st2 ul div h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ─── Blog Details Styles ───────────────────────────────────────────────── */
+.blog-item {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-item:last-child {
+  border-bottom: none;
+}
+
+.blog-item h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.blog-author {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.blog-draft {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.blog-desc {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ─── Course Details Styles ─────────────────────────────────────────────── */
+.course-summary {
+  font-size: 0.82rem;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.course-item {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.course-item p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.course-badge {
+  font-size: 0.75rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* ─── Technique Summary Section ─────────────────────────────────────────── */
+.techniques-section {
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+.techniques-section h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #2e7d32;
+}
+
+.techniques-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.technique-card {
+  border: 1px solid #e8f5e9;
+  border-left: 4px solid #4caf50;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: #f9fbe7;
+}
+
+.technique-card .tc-number {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #4caf50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.technique-card .tc-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: 2px;
+}
+
+.technique-card .tc-where {
+  font-size: 0.78rem;
+  color: #555;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .columns-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .mystyle1 {
+    border-right: none;
+    border-bottom: 3px solid #4caf50;
+  }
+
+  .st2 {
+    border-right: none;
+    border-bottom: 3px solid #4caf50;
+  }
+}

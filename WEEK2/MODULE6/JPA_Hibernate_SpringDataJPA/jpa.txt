@@ -1,0 +1,9 @@
+Java Persistence API (JPA)
+
+Java Persistence API (JPA) is a Java specification (JSR 338) that defines a standard way to map Java objects to relational database tables. It provides a common set of interfaces and annotations for performing database operations, making applications independent of a specific ORM framework. Since JPA is only a specification, it cannot perform database operations by itself and requires an implementation such as Hibernate.
+
+Key Points
+Standard specification for object-relational mapping (ORM).
+Defines annotations like @Entity, @Table, @Id, and @Column.
+Database-independent programming model.
+Requires an implementation such as Hibernate.

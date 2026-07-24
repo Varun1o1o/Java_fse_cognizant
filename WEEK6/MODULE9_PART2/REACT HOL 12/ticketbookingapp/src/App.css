@@ -1,0 +1,46 @@
+.flight-table {
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.flight-table th, .flight-table td {
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+}
+
+.flight-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+.book-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+.guest-status {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.booking-alert {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+  max-width: 700px;
+  margin-bottom: 15px;
+}

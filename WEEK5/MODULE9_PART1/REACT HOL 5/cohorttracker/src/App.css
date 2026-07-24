@@ -1,0 +1,10 @@
+.App {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
